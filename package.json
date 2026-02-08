@@ -1,0 +1,42 @@
+{
+  "name": "lottery-h5",
+  "version": "1.0.0",
+  "description": "H5抽奖系统 - 支持用户签到和管理员抽奖",
+  "bin": "server/index.js",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "server": "node server/index.js",
+    "start": "node server/index.js",
+    "pkg:mac": "pkg . --targets node18-macos-x64 --output release/lottery-mac",
+    "pkg:win": "pkg . --targets node18-win-x64 --output release/lottery-win.exe",
+    "pkg:all": "npm run build && pkg . --targets node18-macos-x64,node18-win-x64 --output release/lottery"
+  },
+  "pkg": {
+    "scripts": [
+      "server/**/*.js"
+    ],
+    "assets": [
+      "dist/**/*"
+    ],
+    "outputPath": "release"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "core-js": "^3.8.3",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1",
+    "uuid": "^9.0.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

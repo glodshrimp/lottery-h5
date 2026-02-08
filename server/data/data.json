@@ -1,0 +1,30 @@
+{
+  "users": [],
+  "winners": [],
+  "prizes": [
+    {
+      "id": 1,
+      "name": "一等奖",
+      "desc": "iPhone 15 Pro"
+    },
+    {
+      "id": 2,
+      "name": "二等奖",
+      "desc": "AirPods Pro"
+    },
+    {
+      "id": 3,
+      "name": "三等奖",
+      "desc": "小米手环"
+    },
+    {
+      "id": 4,
+      "name": "幸运奖",
+      "desc": "精美礼品"
+    }
+  ],
+  "config": {
+    "theme": "red",
+    "displayTitle": "Alibaba 2026 Annual Meeting2026年XXX公司年2026会"
+  }
+}
